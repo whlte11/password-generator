@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
+body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(./images/nebula.jpg);
+    background-image: url(/images/nebula.jpg);
 }
 
-.container {
+.container{
     width: 450px;
     background: #fff;
     border-radius: 8px;
@@ -23,17 +23,18 @@ body {
 }
 
 .container h2{
-    font-family: 'Teko', sans-serif;
+    background-color: #491a75;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     text-align: center;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.31rem;
     padding: 1rem 1.75rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #d4dbe5;
 }
 
-.wrapper {
+.wrapper{
     margin: 1.25rem 1.75rem;
-
 }
 
 .wrapper .input-box{
@@ -42,30 +43,28 @@ body {
 
 .input-box input{
     width: 100%;
-    height: 42px;
-    color: #111;
+    height: 53px;
+    color: #000;
     background: none;
     font-size: 1.06rem;
     font-weight: 500;
     border-radius: 4px;
     letter-spacing: 1.4px;
-    border: 1px solid black;
-    padding: 5px;
-
+    border: 1px solid #aaa;
+    padding: 0 2.85rem 0 1rem;
 }
 
 .input-box span{
     position: absolute;
     right: 13px;
     cursor: pointer;
-    line-height: 40px;
+    line-height: 53px;
     color: #707070;
 }
 
 .input-box span:hover{
-    color: #5A0DCE !important;
+    color: #43A047 !important;
 }
-
 
 .wrapper .pass-indicator{
     width: 100%;
@@ -73,7 +72,6 @@ body {
     position: relative;
     margin-top: 0.75rem;
     border-radius: 25px;
-
 }
 
 .pass-indicator::before{
@@ -87,17 +85,17 @@ body {
 
 .pass-indicator#weak::before{
     width: 20%;
-    background: #FF0000;
+    background: #ff0000;
 }
 
 .pass-indicator#medium::before{
-    width: 20%;
-    background: #FFFF00;
+    width: 50%;
+    background: #ffee00;
 }
 
 .pass-indicator#strong::before{
-    width: 20%;
-    background: #00FF00;
+    width: 100%;
+    background: #00ff0d;
 }
 
 .wrapper .pass-length{
@@ -107,8 +105,6 @@ body {
 .pass-length .details{
     display: flex;
     justify-content: space-between;
-    font-family: 'Teko', sans-serif;
-    font-weight: 700;
 }
 
 .pass-length input{
@@ -116,10 +112,6 @@ body {
     height: 5px;
 }
 
-.pass-settings{
-    font-family: 'Teko', sans-serif;
-    font-weight: 700;
-}
 .pass-settings .options{
     display: flex;
     list-style: none;
@@ -142,7 +134,7 @@ body {
     opacity: 0.7;
 }
 
-.options .option input {
+.options .option input{
     height: 16px;
     width: 16px;
     cursor: pointer;
@@ -150,7 +142,7 @@ body {
 
 .options .option label{
     cursor: pointer;
-    color: #000;
+    color: #4f4f4f;
     padding-left: 0.63rem;
 }
 
@@ -160,20 +152,14 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    background: #000099;
+    background: #4a349b;
     font-size: 1.06rem;
     padding: 0.94rem 0;
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    font-size: 25px;
 }
 
-.gnr-btn:active{
-    box-shadow: 15px 13px 26px -7px rgba(0,0,0,0.73);
-    background-color: #000080;
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color:#00FF00;
+.gnr-btn:hover{
+    background-color: #1900fc;
 }

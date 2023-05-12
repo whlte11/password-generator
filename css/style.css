@@ -23,11 +23,7 @@ body{
 }
 
 .container h2{
-    background-color: #491a75;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.31rem;
     padding: 1rem 1.75rem;
     border-bottom: 1px solid #d4dbe5;
@@ -85,17 +81,17 @@ body{
 
 .pass-indicator#weak::before{
     width: 20%;
-    background: #ff0000;
+    background: #e64a4a;
 }
 
 .pass-indicator#medium::before{
     width: 50%;
-    background: #ffee00;
+    background: #f1c80b;
 }
 
 .pass-indicator#strong::before{
     width: 100%;
-    background: #00ff0d;
+    background: #43A047;
 }
 
 .wrapper .pass-length{
@@ -146,20 +142,16 @@ body{
     padding-left: 0.63rem;
 }
 
-.wrapper .gnr-btn{
+.wrapper .generate-btn{
     width: 100%;
     color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
-    background: #4a349b;
+    background: #43A047;
     font-size: 1.06rem;
     padding: 0.94rem 0;
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
-}
-
-.gnr-btn:hover{
-    background-color: #1900fc;
 }

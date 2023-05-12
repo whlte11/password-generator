@@ -23,6 +23,7 @@ body{
 }
 
 .container h2{
+    text-align: center;
     font-weight: 600;
     font-size: 1.31rem;
     padding: 1rem 1.75rem;
@@ -59,7 +60,7 @@ body{
 }
 
 .input-box span:hover{
-    color: #43A047 !important;
+    color: #63029b !important;
 }
 
 .wrapper .pass-indicator{
@@ -81,17 +82,17 @@ body{
 
 .pass-indicator#weak::before{
     width: 20%;
-    background: #e64a4a;
+    background: #e70000;
 }
 
 .pass-indicator#medium::before{
     width: 50%;
-    background: #f1c80b;
+    background: #ffd000;
 }
 
 .pass-indicator#strong::before{
     width: 100%;
-    background: #43A047;
+    background: #00fa0c;
 }
 
 .wrapper .pass-length{
@@ -148,10 +149,15 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    background: #43A047;
+    background: #610479;
     font-size: 1.06rem;
     padding: 0.94rem 0;
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
+}
+
+.generate-btn:hover {
+    background-color:rgba(81, 19, 110, 1);
+    color: #fff;
 }
